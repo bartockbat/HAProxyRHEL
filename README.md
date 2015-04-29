@@ -7,5 +7,5 @@ I have configured it as a simple load balancer with 3 web servers that I have ru
 To build , simply:
 
 1. git clone https://github.com/bartockbat/HAProxyRHEL.git
-2. sudo docker build -t <container_name> .
-3. sudo docker run -it <container_name> bash
+2. sudo docker build -t (container_name) .
+3. sudo docker run -it (container_name) bash
