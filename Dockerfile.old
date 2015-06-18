@@ -1,4 +1,4 @@
-FROM rhel7.1:latest
+FROM centos 
 
 MAINTAINER "Glen Millard <gmillard@redhat.com>"
 
@@ -16,7 +16,7 @@ RUN yum -y install haproxy
 RUN mv /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.old
 
 #Copy the custom config file into place
-COPY haproxy.cfg /etc/haproxy/haproxy.cfg
+ADD ["${PWD}/haproxy.cfg"], ["/etc/haproxy/haproxy.cfg"]
 
 #TCP Port 80 so we can see the server
 EXPOSE 80
