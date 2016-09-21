@@ -1,6 +1,6 @@
 FROM rhel7.1:latest
 
-MAINTAINER "Glen Millard <gmillard@redhat.com>"
+MAINTAINER HAProxy
 
 LABEL Name HA Proxy OSS 
 LABEL Release OSS Edition
